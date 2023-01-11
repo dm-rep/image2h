@@ -1,0 +1,23 @@
+image2h
+================================
+**image2h** is a small utility. Generates the **c** code for icon graphics from the specified graphics file.
+
+Example of use:
+
+![image](example/antenna.png)
+ 
+>`image2h.exe antenna.png`
+
+Program output: 
+
+>`File ico16_antenna.h was created successfully :)`
+ 
+Generated code: [ico16_antenna.h](example/ico16_antenna.h)
+```
+const uint8_t ico16_antenna[] PROGMEM = {
+	0x00, 0x00, 0x20, 0x04, 0x49, 0x92, 0x53, 0xca, 
+	0x57, 0xea, 0x57, 0xea, 0x53, 0xca, 0x49, 0x92, 
+	0x21, 0x84, 0x01, 0x80, 0x01, 0x80, 0x01, 0x80, 
+	0x01, 0x80, 0x01, 0x80, 0x01, 0x80, 0x00, 0x00 };
+```
+
